@@ -10,7 +10,7 @@
 <body>
   <header>
     <nav>
-      <h1 class="logo"><a href="home">FAAC</a></h1>
+      <h1 class="logo"><a href="#home">FAAC</a></h1>
       <i class='bx bx-menu'></i>
     </nav>
     <ul class="hide">
@@ -20,77 +20,119 @@
     </ul>
   </header>
   <main>
-    <section class="sec1" id="home">
-      <p>
-        Hi there!<br>I am <span>Azienwi Che,</span>
-        a learner at <a href="#">Caasitech Academy</a>.
-      </p>
-    </section>
-    <section class="sec2" id="about">
-      <p>I am an aspiring Software Developer, 
-        passionate about creating innovative Software that are 
-        both attractive and impactful.
-      </p>
-      <div>
-        <button>Let's talk</button>
-      </div>
-    </section>
-    <section class="sec3">
-      <h2>
-        WHAT I OFFER
-      </h2>
-      <div class="webdev">
-        <h3>WEB DEVELOPMENT</h3>
-        <p>I build Attractive websites for multiple 
-          screen sizes </p>
-        <p>With knowledge in the following languages:</p>
-        <ul>
-          <li>JavaScript</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-      </div>
-      <div class="appdev">
-        <h3>APP DEVELOPMENT</h3>
-        <p>I build interactive cross-platform
-          mobile applications</p>
-        <p>With knowledge in the following languages:</p>
-        <ul>
-          <li>JavaScript</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-      </div>
-    </section>
-    <section class="sec4">
-      <h2>HIGHLIGHTED PROJECTS</h2>
-      <div class="proj">
-        <h3>THE CARRIER DETECTOR</h3>
-        <p>The carrier detector is an interface I build that receives
-          a phone number from the user and determines the service provider.
+  <div class="sidebar">
+    <div>
+      <section class="sec1" id="home">
+        <p>
+          Hi there!<br>I am <span>Azienwi Che,</span>
+          a learner at <a href="#">Caasitech Academy</a>.
         </p>
-        <div class="demo">
-          <button>live demo</button>
-          <button>see source</button>
+      </section>
+      <section class="sec2">
+        <p id="about">I am an aspiring Software Developer, 
+          passionate about creating innovative Software that are 
+          both attractive and impactful.
+        </p>
+        <div>
+          <button><a href="#contact">Let's talk <i class='bx bxs-chat' ></i></a></button>
         </div>
-      </div>
-    </section>
-    <form id="contact">
+      </section>
+      <section class="sec3">
+        <h2 id="services">
+          WHAT I OFFER
+        </h2>
+        <div class="offer">
+          <div class="webdev">
+            <h3>WEB DEVELOPMENT</h3>
+            <p>I build Attractive websites for multiple 
+              screen sizes </p>
+            <p>With knowledge in the following languages:</p>
+            <ul>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div class="appdev">
+            <h3>APP DEVELOPMENT</h3>
+            <p>I build interactive cross-platform
+              mobile applications</p>
+            <p>With knowledge in the following languages:</p>
+            <ul>
+              <li>Dart</li>
+              <li>C/C++</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="sec4">
+        <h2>HIGHLIGHTED PROJECTS</h2>
+        <div class="proj">
+          <h3>THE CARRIER DETECTOR</h3>
+          <p>The carrier detector is an interface I built that receives
+            a phone number from the user and determines the service provider.
+          </p>
+          <div class="demo">
+            <a href="https://a-che613.github.io/my-first-repo/" target="_blank">
+            <button>live demo <i class='bx bx-wifi'></i></button></a>
+            <a href="https://github.com/a-che613/my-first-repo/blob/7d67ccfc75654f9725e9339ae274a49be1bd173c/javascript.js" target="_blank">
+            <button>see source <i class='bx bxl-github'></i></button></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="entire">
+      <img src="logo2-removebg-preview.jpg" width="180px" height="180px">
       <div>
-        <input type="text" placeholder="Enter your Name" class="input">
+        <p>
+          F.A. CHE
+        </p>
+        <q>Hello, send me a message 
+          if you would like me 
+          to work on any of your projects.
+        </q>
       </div>
-      <div>
-        <input type="email" placeholder="Enter your email" class="input">
-      </div>
-      <div>
-        <textarea placeholder="Enter your message" class="input"></textarea>
-      </div>
-      <div>
-        <button>send message</button>
-      </div>
-    </form>
+    </div>
+  </div>
+      <form action="https://formspree.io/f/xaykrbkl" method="POST">
+        <div>
+          <h2 id="contact">Contact me</h2>
+        </div>
+        <div class="inx">
+          <label for="name">Your name</label>
+          <input type="text" placeholder="Enter your Name" class="input">
+        </div>
+        <div class="inx">
+          <label for="email">Your email</label>
+          <input type="email" placeholder="Enter your email" class="input">
+        </div>
+        <div class="inx">
+          <label for="text">Your message</label>
+          <textarea placeholder="Enter your message" class="input"></textarea>
+        </div>
+        <div class="inx">
+          <button>send message <i class='bx bxs-send'></i></button>
+        </div>
+      </form>
+    
+    
   </main>
-  <footer></footer>
+  <footer>
+    <div>
+      <!-- Place this tag where you want the button to render. -->
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/a-che613" data-color-scheme="no-preference: light; light: light; dark: dark;" aria-label="Follow @a-che613 on GitHub" target="_blank">
+      <i class='bx bxl-github'></i></a>
+      <a class="twitter-timeline" data-lang="en" data-theme="dark" href="https://twitter.com/alex_che61?ref_src=twsrc%5Etfw" target="_blank"> 
+      <i class='bx bxl-twitter'></i></a>
+      <a href="https://www.linkedin.com/in/azienwi-che-686316236" target="_blank">
+      <i class='bx bxl-linkedin'></i></a>
+      <a href="https://wa.me/654490031" target="_blank">
+      <i class='bx bxl-whatsapp'></i></a>
+    </div>
+    <p>Made with love A.Che</p>
+  </footer>
+  <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
   <script src="script.js"></script>
 </body>
 </html>

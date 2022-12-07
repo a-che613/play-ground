@@ -241,6 +241,9 @@ form div button {
   justify-content: center;
   gap: 3px;
 }
+form label {
+  color: #0a514c;
+}
 
 footer {
   display: flex;
